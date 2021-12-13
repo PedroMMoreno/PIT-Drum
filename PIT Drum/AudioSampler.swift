@@ -20,7 +20,7 @@ import AVFAudio
 ///   *  Cymbal
 ///
 /// - Author: Pedro M. Moreno
-/// - Date: 03/10/2021.
+/// - Date: 03/10/2021. 
 ///
 open class AudioSampler {
     /* VARIABLES */
