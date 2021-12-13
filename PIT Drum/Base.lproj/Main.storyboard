@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PIT_Drum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drumkit_1" translatesAutoresizingMaskIntoConstraints="NO" id="Oxf-BA-TId">
+                                <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button multipleTouchEnabled="YES" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" preferredBehavioralStyle="pad" translatesAutoresizingMaskIntoConstraints="NO" id="yUl-TU-yng" userLabel="Kick">
+                                <rect key="frame" x="531.5" y="479.5" width="83.5" height="167"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="0.33000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="playSample:" destination="BYZ-38-t0r" eventType="touchDown" id="qJB-s1-Z8b"/>
+                                </connections>
+                            </button>
+                            <button multipleTouchEnabled="YES" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" preferredBehavioralStyle="pad" translatesAutoresizingMaskIntoConstraints="NO" id="05P-ju-Nu9" userLabel="Snare">
+                                <rect key="frame" x="280.5" y="463" width="215" height="225"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="0.33000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="playSample:" destination="BYZ-38-t0r" eventType="touchDown" id="SDE-L6-X1r"/>
+                                </connections>
+                            </button>
+                            <button multipleTouchEnabled="YES" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" preferredBehavioralStyle="pad" translatesAutoresizingMaskIntoConstraints="NO" id="8pO-MR-egp" userLabel="Closed Hat">
+                                <rect key="frame" x="77.5" y="358.5" width="215" height="200.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="0.33000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="playSample:" destination="BYZ-38-t0r" eventType="touchDown" id="D2g-Ya-uQP"/>
+                                </connections>
+                            </button>
+                            <button multipleTouchEnabled="YES" tag="7" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" preferredBehavioralStyle="pad" translatesAutoresizingMaskIntoConstraints="NO" id="SqN-fe-eSf" userLabel="Tom 1">
+                                <rect key="frame" x="340.5" y="217" width="238.5" height="250"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="0.33000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="playSample:" destination="BYZ-38-t0r" eventType="touchDown" id="5f0-TQ-z59"/>
+                                </connections>
+                            </button>
+                            <button multipleTouchEnabled="YES" tag="4" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" preferredBehavioralStyle="pad" translatesAutoresizingMaskIntoConstraints="NO" id="Oa7-en-pdd" userLabel="Crash 1">
+                                <rect key="frame" x="136" y="125" width="274.5" height="267"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="0.33000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="playSample:" destination="BYZ-38-t0r" eventType="touchDown" id="QjI-Ot-bwI"/>
+                                </connections>
+                            </button>
+                            <button multipleTouchEnabled="YES" tag="9" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" preferredBehavioralStyle="pad" translatesAutoresizingMaskIntoConstraints="NO" id="ezs-V1-rsf" userLabel="Cymbal">
+                                <rect key="frame" x="770.5" y="417" width="315.5" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="0.33000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="playSample:" destination="BYZ-38-t0r" eventType="touchDown" id="FWx-W4-w3a"/>
+                                </connections>
+                            </button>
+                            <button multipleTouchEnabled="YES" tag="6" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" preferredBehavioralStyle="pad" translatesAutoresizingMaskIntoConstraints="NO" id="hXR-vk-lLy" userLabel="Crash 3">
+                                <rect key="frame" x="975.5" y="358" width="208" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="0.33000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="playSample:" destination="BYZ-38-t0r" eventType="touchDown" id="goi-D0-f7l"/>
+                                </connections>
+                            </button>
+                            <button multipleTouchEnabled="YES" tag="8" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" preferredBehavioralStyle="pad" translatesAutoresizingMaskIntoConstraints="NO" id="gIc-r3-Cfo" userLabel="Tom 2">
+                                <rect key="frame" x="604" y="235" width="269" height="272.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="0.33000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="playSample:" destination="BYZ-38-t0r" eventType="touchDown" id="8fT-76-X23"/>
+                                </connections>
+                            </button>
+                            <button multipleTouchEnabled="YES" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" preferredBehavioralStyle="pad" translatesAutoresizingMaskIntoConstraints="NO" id="5UA-bE-GKj" userLabel="Crash 2">
+                                <rect key="frame" x="810" y="91.5" width="304.5" height="299"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="0.33000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="playSample:" destination="BYZ-38-t0r" eventType="touchDown" id="NXk-rf-5vU"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BPY-Qr-eqJ">
+                                <rect key="frame" x="128.5" y="624" width="77.5" height="33.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <segments>
+                                    <segment title="" image="Symbol"/>
+                                    <segment title="" image="largecircle.fill.circle" catalog="system"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="changeHat:" destination="BYZ-38-t0r" eventType="valueChanged" id="1qd-Ha-ckJ"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="font3" translatesAutoresizingMaskIntoConstraints="NO" id="epO-Su-zaU">
+                                <rect key="frame" x="358" y="21" width="478" height="83.5"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PIT Drum Icon_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="Oqk-jv-azg">
+                                <rect key="frame" x="537.5" y="709" width="119" height="83.5"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588234" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5UA-bE-GKj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.612" id="1ym-iW-0Te"/>
+                            <constraint firstItem="8pO-MR-egp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.18" id="2RV-Zy-Yl6"/>
+                            <constraint firstItem="Oa7-en-pdd" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.23" id="42I-hR-5kl"/>
+                            <constraint firstItem="Oqk-jv-azg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.1" id="7vU-iz-rCP"/>
+                            <constraint firstItem="Oqk-jv-azg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.8" id="95d-64-f3f"/>
+                            <constraint firstItem="05P-ju-Nu9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.18" id="9u1-8Y-1z4"/>
+                            <constraint firstItem="Oa7-en-pdd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.62" id="AIZ-yn-2fF"/>
+                            <constraint firstItem="Oxf-BA-TId" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="ALl-y6-DuN"/>
+                            <constraint firstItem="ezs-V1-rsf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.264" id="AxB-MR-GXO"/>
+                            <constraint firstItem="Oqk-jv-azg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="C29-Ms-bC4"/>
+                            <constraint firstItem="5UA-bE-GKj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.255" id="D75-ad-JdC"/>
+                            <constraint firstItem="BPY-Qr-eqJ" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.039" id="DIc-JF-wsF"/>
+                            <constraint firstItem="05P-ju-Nu9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.65" id="EYL-nV-Tdo"/>
+                            <constraint firstItem="yUl-TU-yng" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.35" id="FXd-C8-jQS"/>
+                            <constraint firstItem="epO-Su-zaU" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="Ftn-vx-ZIK"/>
+                            <constraint firstItem="8pO-MR-egp" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.24" id="Ggq-yf-kIw"/>
+                            <constraint firstItem="SqN-fe-eSf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.2" id="IM4-tf-mOn"/>
+                            <constraint firstItem="BPY-Qr-eqJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.28" id="IhU-MW-ffn"/>
+                            <constraint firstItem="gIc-r3-Cfo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.225" id="KAh-2R-jUF"/>
+                            <constraint firstItem="epO-Su-zaU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="MDK-hF-p6I"/>
+                            <constraint firstItem="gIc-r3-Cfo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.89" id="QAA-Kt-3uz"/>
+                            <constraint firstItem="hXR-vk-lLy" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.24" id="Tba-xG-mLN"/>
+                            <constraint firstItem="5UA-bE-GKj" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.358" id="XyE-It-jxM"/>
+                            <constraint firstItem="Oqk-jv-azg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y7a-5m-NTg"/>
+                            <constraint firstItem="hXR-vk-lLy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.808" id="YRs-gj-bJ0"/>
+                            <constraint firstItem="8pO-MR-egp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.31" id="YaP-7W-Qun"/>
+                            <constraint firstItem="05P-ju-Nu9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.38" id="aIF-YQ-aSU"/>
+                            <constraint firstItem="gIc-r3-Cfo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.237" id="aTq-kx-DZ8"/>
+                            <constraint firstItem="SqN-fe-eSf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.77" id="cyj-jd-Toq"/>
+                            <constraint firstItem="05P-ju-Nu9" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.27" id="eGj-yW-Pos"/>
+                            <constraint firstItem="yUl-TU-yng" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.07" id="ekP-KH-pOf"/>
+                            <constraint firstItem="BPY-Qr-eqJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.535" id="fKh-6S-Hl2"/>
+                            <constraint firstItem="yUl-TU-yng" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="fqK-B3-LAE"/>
+                            <constraint firstItem="ezs-V1-rsf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.36" id="g8g-qP-qPP"/>
+                            <constraint firstItem="8pO-MR-egp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.1" id="h2A-zM-n6h"/>
+                            <constraint firstItem="epO-Su-zaU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.15" id="ij3-U2-JPi"/>
+                            <constraint firstItem="Oxf-BA-TId" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lFL-4r-u8B"/>
+                            <constraint firstItem="Oxf-BA-TId" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="muE-ej-6VM"/>
+                            <constraint firstItem="SqN-fe-eSf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="nqt-Cb-swY"/>
+                            <constraint firstItem="ezs-V1-rsf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.555" id="oie-lE-LyR"/>
+                            <constraint firstItem="hXR-vk-lLy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.174" id="pO0-7A-hqe"/>
+                            <constraint firstItem="SqN-fe-eSf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.82" id="q7x-2J-TCV"/>
+                            <constraint firstItem="hXR-vk-lLy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.098" id="qTl-Mg-aZI"/>
+                            <constraint firstItem="Oa7-en-pdd" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.32" id="rRa-vt-hjB"/>
+                            <constraint firstItem="BPY-Qr-eqJ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.065" id="rsy-4C-fn1"/>
+                            <constraint firstItem="ezs-V1-rsf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.36" id="sdh-C1-yC3"/>
+                            <constraint firstItem="gIc-r3-Cfo" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.327" id="ssD-1y-yPt"/>
+                            <constraint firstItem="yUl-TU-yng" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.96" id="vM9-Ip-q5r"/>
+                            <constraint firstItem="Oxf-BA-TId" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="xQF-TU-VgR"/>
+                            <constraint firstItem="epO-Su-zaU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yLH-2W-yNy"/>
+                            <constraint firstItem="5UA-bE-GKj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.578" id="yob-nH-vUv"/>
+                            <constraint firstItem="Oa7-en-pdd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.458" id="zpD-6H-cPC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="crash1Button" destination="Oa7-en-pdd" id="XcV-5z-0iP"/>
+                        <outlet property="crash2Button" destination="5UA-bE-GKj" id="g2r-KD-W5O"/>
+                        <outlet property="crash3Button" destination="hXR-vk-lLy" id="abx-Wu-7kJ"/>
+                        <outlet property="cymbalButton" destination="ezs-V1-rsf" id="efc-Pg-Yyo"/>
+                        <outlet property="hatButton" destination="8pO-MR-egp" id="4Dd-lz-lVU"/>
+                        <outlet property="kickButton" destination="yUl-TU-yng" id="LaL-ij-kOH"/>
+                        <outlet property="snareButton" destination="05P-ju-Nu9" id="vTf-Ht-qbh"/>
+                        <outlet property="tom1Button" destination="SqN-fe-eSf" id="hfC-bv-s6x"/>
+                        <outlet property="tom2Button" destination="gIc-r3-Cfo" id="brm-e1-Pp4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.48743718592965" y="85.611510791366911"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PIT Drum Icon_yellow" width="708" height="687"/>
+        <image name="Symbol" width="17" height="17"/>
+        <image name="drumkit_1" width="673" height="372"/>
+        <image name="font3" width="724" height="172"/>
+        <image name="largecircle.fill.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

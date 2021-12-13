@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PIT Drum Icon_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="ka0-8r-xXl">
+                                <rect key="frame" x="0.0" y="375.5" width="1194" height="333.5"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="font3" translatesAutoresizingMaskIntoConstraints="NO" id="mlu-xM-dYv">
+                                <rect key="frame" x="179" y="125" width="836" height="250.5"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.12156862745098039" green="0.12941176470588234" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mlu-xM-dYv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6W5-3p-GYV"/>
+                            <constraint firstItem="ka0-8r-xXl" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.4" id="A4b-aV-Ae3"/>
+                            <constraint firstItem="mlu-xM-dYv" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.3" id="HMC-zG-kCx"/>
+                            <constraint firstItem="ka0-8r-xXl" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PSY-HE-OGy"/>
+                            <constraint firstItem="ka0-8r-xXl" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="1.3" id="Pqy-18-w3c"/>
+                            <constraint firstItem="mlu-xM-dYv" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.7" id="SY3-mf-V4P"/>
+                            <constraint firstItem="mlu-xM-dYv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.6" id="fLq-Na-NXj"/>
+                            <constraint firstItem="ka0-8r-xXl" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="ogt-KH-wZt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.708638360175691" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PIT Drum Icon_yellow" width="708" height="687"/>
+        <image name="font3" width="724" height="172"/>
+    </resources>
+</document>
