@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     
     /* CONTROL FLOW */
     var isOpen: Bool = false
-    //Test comment
     
     /* INSTRUMENT */
     var audioSampler: AudioSampler!
