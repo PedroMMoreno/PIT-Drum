@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     /* INSTRUMENT */
     var audioSampler: AudioSampler!
-    //Test coment
+
     /* BUTTONS */
     @IBOutlet var kickButton: UIButton!
     @IBOutlet var snareButton: UIButton!
